@@ -4,10 +4,26 @@
   border-bottom: 1px solid $gray-line;
   padding: 40px 0;
 
+  
+
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 818px) {
+      flex-direction: column;
+     
+      .search_container {
+        margin-top: 25px;
+        
+      }
+
+      .header__cart {
+        margin-top: 25px;
+      }
+
+    }
 
     @media (max-width: 645px) {
       flex-direction: column;
